@@ -1,4 +1,4 @@
 theme = "PaperMod"
-baseURL = 'https://example.org/'
+baseURL = 'https://www.psyberjelly.net/'
 languageCode = 'en-us'
 title = 'My New Hugo Site'
