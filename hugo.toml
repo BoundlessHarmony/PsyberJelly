@@ -1,4 +1,30 @@
 theme = "PaperMod"
 baseURL = 'https://www.psyberjelly.net/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'PsyberJelly Cove'
+
+[params]
+  ShowToc = true        # Shows Table of Contents (optional, not required for menu)
+  ShowBreadCrumbs = true # (optional)
+  ShowNav = true         # Shows the main menu in the header/sidebar
+
+[menu]
+
+  [[menu.main]]
+    identifier = "cyber-lab"
+    name = "Home Cyber Security Lab"
+    url = "/cyber-lab/"
+    weight = 1
+
+  [[menu.main]]
+    identifier = "machine-learning"
+    name = "Machine Learning Projects"
+    url = "/machine-learning/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "detection-engineering"
+    name = "Detection Engineering"
+    url = "/detection-engineering/"
+    weight = 3
+
