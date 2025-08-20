@@ -10,8 +10,7 @@ description: "My machine learning and AI adventures"
 From neural nets to anomaly detection, this page showcases my machine learning projects and experiments—jellyfish included.
 
 **Current projects:**
-- Phishing detection using deep learning
-- Malware classification with CNNs
-- Data wrangling & visualization
+- [machine-learning](/Projects/)
+- [machine-learning](/Projects/Evolutionary_Sting)
 
 [⬅️ Back to Home](/)
