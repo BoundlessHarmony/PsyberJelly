@@ -10,7 +10,7 @@ description: "My machine learning and AI adventures"
 From neural nets to anomaly detection, this page showcases my machine learning projects and experiments—jellyfish included.
 
 **Current projects:**
-- [machine-learning](/Projects/)
-- [machine-learning](/Projects/Evolutionary_Sting)
+- [Projects]({{< relref "/machine-learning/projects" >}})
+- [Data Sets]({{< relref "/machine-learning/data-sets" >}})
 
 [⬅️ Back to Home](/)

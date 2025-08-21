@@ -1,7 +1,9 @@
 ---
 title: "Machine Learning Projects"
-description: "🪼 Click a project to find out more 🪼"
+description: "🪼 Hands-on ML builds, notebooks, and end-to-end experiments. 🪼"
 ---
+
+Here you'll find full projects (not just snippets). Each entry includes problem framing, data prep, modeling, evaluation, and takeaways.
 
 ![Jellyfish ML](/images/jellyfish/ml.png)
 
@@ -15,6 +17,7 @@ A few rambling thoughts on some primary principals within cyber security develop
 - Value: Creating real value to the Cove is hard. But with knowledge and skill there comes ability, and with discernment and experience, comes vision. Become Useful. If you already are, actively engage in creation. A call to Tentacles for all Jellies, you might say. At least...I do
 
 ## Explore:
-
+- [evolutionary-sting]({{< relref "/machine-learning/projects/evolutionary-sting" >}})
 - [machine-learning](/Projects)
+
 [⬅️ Back to Home](/)
