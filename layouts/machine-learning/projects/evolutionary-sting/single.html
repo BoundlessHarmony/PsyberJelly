@@ -1,0 +1,28 @@
+{{ define "main" }}
+<div class="evo-grid">
+  <aside class="evo-sidebar">
+    <h3>Devlog</h3>
+    <ul class="evo-list">
+      {{ range .CurrentSection.Pages.ByDate.Reverse }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
+      {{ end }}
+    </ul>
+  </aside>
+
+  <article class="evo-content">
+    <h1>{{ .Title }}</h1>
+    {{ with .Date }}<p><small>{{ .Format "2006-01-02" }}</small></p>{{ end }}
+    {{ .Content }}
+
+    {{/* Optional prev/next within the section */}}
+    <hr>
+    <p>
+      {{ with .PrevInSection }}← <a href="{{ .RelPermalink }}">{{ .Title }}</a>{{ end }}
+      {{ if and (.PrevInSection) (.NextInSection) }} • {{ end }}
+      {{ with .NextInSection }}<a href="{{ .RelPermalink }}">{{ .Title }}</a> →{{ end }}
+    </p>
+  </article>
+</div>
+{{ end }}

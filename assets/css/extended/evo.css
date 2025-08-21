@@ -1,0 +1,49 @@
+/* Make this section span the entire viewport width, even inside PaperMod's centered main */
+.evo-full {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+/* Sidebar + content grid */
+.evo-grid {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 280px minmax(0, 1fr);
+  gap: 2rem;
+
+  /* add some breathing room from the very edge */
+  padding-left: clamp(12px, 3vw, 32px);
+  padding-right: clamp(12px, 3vw, 32px);
+}
+
+/* Sidebar styling */
+.evo-sidebar {
+  position: sticky;
+  top: 4rem;
+  align-self: start;
+  padding-right: 1rem;
+  border-right: 1px solid rgba(128, 128, 128, 0.35); /* explicit color so it shows */
+}
+
+.evo-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.evo-list li { margin: 0.25rem 0; }
+
+/* Keep article readable */
+.evo-content {
+  max-width: 850px;
+}
+
+/* Mobile: stack */
+@media (max-width: 900px) {
+  .evo-grid { grid-template-columns: 1fr; }
+  .evo-sidebar { order: 2; border-right: none; padding-right: 0; }
+}

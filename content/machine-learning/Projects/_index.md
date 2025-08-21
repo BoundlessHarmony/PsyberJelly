@@ -1,6 +1,7 @@
 ---
 title: "Machine Learning Projects"
 description: "🪼 Hands-on ML builds, notebooks, and end-to-end experiments. 🪼"
+layout: "evohub"
 ---
 
 Here you'll find full projects (not just snippets). Each entry includes problem framing, data prep, modeling, evaluation, and takeaways.

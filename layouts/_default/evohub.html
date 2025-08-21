@@ -1,0 +1,18 @@
+{{ define "main" }}
+<div class="evo-full">
+  <div class="evo-grid">
+    <aside class="evo-sidebar">
+      <h3>Devlog</h3>
+      <ul class="evo-list">
+        {{ range .Pages.ByDate.Reverse }}
+          <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }}
+      </ul>
+    </aside>
+
+    <article class="evo-content">
+      {{ .Content }}
+    </article>
+  </div>
+</div>
+{{ end }}
